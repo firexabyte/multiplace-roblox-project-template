@@ -44,12 +44,13 @@ module and a place module sit side by side under `Source.Features` / `Source.Cor
 
 This project follows a **feature-based** layout: every source root has a
 `features/` folder, and each feature is a **self-contained folder** holding all
-of its own code. The cleanest way to author one is a folder with an `init.luau`
-(the feature's main module) plus any helper files beside it — Rojo turns the
-whole folder into a single `ModuleScript` named after the folder. The included
-`shared/src/features/Teleport/` is an empty example stub (the canonical
-cross-place concern); rename or replace it. A feature's server-side files
-(anything with `server` in the filename) are routed to
+of its own code. A feature is just a plain folder — no `init.luau`. The folder
+becomes a Roblox `Folder` named after it, and each `.luau` inside becomes a
+`ModuleScript` within it. For example `shared/src/features/Teleport/` (with
+`TeleportController.luau` and `TeleportPrompt.luau`) builds to
+`Source.Features.Teleport` containing those two modules; it's an empty example
+stub (the canonical cross-place concern), so rename or replace it. A feature's
+server-side files (anything with `server` in the filename) are routed to
 `ServerScriptService.Features`; everything else goes to
 `ReplicatedStorage.Source.Features`. Place-specific features live in each place's
 `features/`; features shared by every place live in `shared/src/features/`.

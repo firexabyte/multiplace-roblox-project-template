@@ -9,7 +9,13 @@
         "Features": {
           "$className": "Folder",
           "Teleport": {
-            "$path": "shared/src/features/Teleport"
+            "$className": "Folder",
+            "TeleportController": {
+              "$path": "shared/src/features/Teleport/TeleportController.luau"
+            },
+            "TeleportPrompt": {
+              "$path": "shared/src/features/Teleport/TeleportPrompt.luau"
+            }
           }
         },
         "Core": {
@@ -22,6 +28,9 @@
           },
           "UI": {
             "$className": "Folder",
+            "UITypes": {
+              "$path": "shared/src/core/ui/UITypes.luau"
+            },
             "Primitives": {
               "$className": "Folder",
               "Button": {
@@ -33,14 +42,14 @@
               "TextLabel": {
                 "$path": "shared/src/core/ui/primitives/TextLabel.luau"
               }
-            },
-            "UITypes": {
-              "$path": "shared/src/core/ui/UITypes.luau"
             }
           }
         },
         "Game": {
           "$className": "Folder",
+          "Configs": {
+            "$path": "shared/src/game/Configs.luau"
+          },
           "Assets": {
             "$className": "Folder",
             "ImageIds": {
@@ -49,9 +58,6 @@
             "Sound": {
               "$path": "shared/src/game/assets/Sound.luau"
             }
-          },
-          "Configs": {
-            "$path": "shared/src/game/Configs.luau"
           },
           "Items": {
             "$className": "Folder",
