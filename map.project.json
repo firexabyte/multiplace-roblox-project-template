@@ -1,0 +1,100 @@
+{
+  "emitLegacyScripts": false,
+  "name": "map",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Source": {
+        "$className": "Folder",
+        "Features": {
+          "$className": "Folder",
+          "Teleport": {
+            "$path": "shared/src/features/Teleport"
+          }
+        },
+        "Core": {
+          "$className": "Folder",
+          "Platform": {
+            "$className": "Folder",
+            "SoundController": {
+              "$path": "shared/src/core/platform/SoundController.luau"
+            }
+          },
+          "UI": {
+            "$className": "Folder",
+            "Primitives": {
+              "$className": "Folder",
+              "Button": {
+                "$path": "shared/src/core/ui/primitives/Button.luau"
+              },
+              "ImageLabel": {
+                "$path": "shared/src/core/ui/primitives/ImageLabel.luau"
+              },
+              "TextLabel": {
+                "$path": "shared/src/core/ui/primitives/TextLabel.luau"
+              }
+            },
+            "UITypes": {
+              "$path": "shared/src/core/ui/UITypes.luau"
+            }
+          }
+        },
+        "Game": {
+          "$className": "Folder",
+          "Assets": {
+            "$className": "Folder",
+            "ImageIds": {
+              "$path": "shared/src/game/assets/ImageIds.luau"
+            },
+            "Sound": {
+              "$path": "shared/src/game/assets/Sound.luau"
+            }
+          },
+          "Configs": {
+            "$path": "shared/src/game/Configs.luau"
+          },
+          "Items": {
+            "$className": "Folder",
+            "DataTemplate": {
+              "$path": "shared/src/game/items/DataTemplate.luau"
+            }
+          }
+        },
+        "StartUp": {
+          "$className": "Folder",
+          "MountUI": {
+            "$path": "places/map/src/startup/MountUI.luau"
+          }
+        }
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Features": {
+        "$className": "Folder"
+      },
+      "Core": {
+        "$className": "Folder"
+      },
+      "Game": {
+        "$className": "Folder"
+      },
+      "StartUp": {
+        "$className": "Folder",
+        "Server": {
+          "$path": "places/map/src/startup/Server.server.luau"
+        }
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": {
+          "$path": "places/map/src/startup/Client.client.luau"
+        }
+      }
+    }
+  }
+}

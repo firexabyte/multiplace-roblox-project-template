@@ -1,0 +1,18 @@
+{
+  "name": "untitled",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-place Roblox project template (lobby + maps + shared).",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "tools/genFeatureTree.js",
+  "scripts": {
+    "build:rojo": "node tools/genFeatureTree.js",
+    "watch:rojo": "node tools/genFeatureTree.js --watch"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  },
+  "devDependencies": {}
+}

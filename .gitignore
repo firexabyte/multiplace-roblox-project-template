@@ -1,0 +1,13 @@
+# Generated place files (one per place under places/)
+/*.rbxlx
+/*.rbxl
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+sourcemap.json
+Packages/
+node_modules/
+.claude/
+.vscode/
